@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 19px;
+
+    & .oculus {
+        width: 235px;
+        margin-right: 10%;
+    }
+
+    & .basket {
+        width: 16.93px;
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+
+    & a {
+        font-size: 16px;
+        line-height: 18px;
+        color: rgb(92, 92, 94);
+    }
+
+    & .oculus {
+        width: 235px;
+    }
+
+    & .basket {
+        width: 16.93px;
+    }
+}
+
+.banner {
+    background-image: url("img/bg.png");
+    padding: 230px 0 454px 360px;
+    color: rgb(92, 92, 94);
+
+    & h1 {
+        font-size: 96px;
+        font-weight: 400;
+        line-height: 110px;
+    }
+
+    & h3 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 41px;
+    }
+
+    & .desc {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+        margin-bottom: 50px;
+    }
+
+    & .age {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+}
+
+.buy {
+    display: flex;
+    margin-bottom: 10px;
+
+    & button {
+        background: linear-gradient(180deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+        color: rgb(246, 244, 245);;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        padding: 21px 111px;
+        border: none;
+    }
+
+    & span {
+        border: 1px solid;
+        border-image: linear-gradient(180deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+        border-image-slice: 1;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        padding: 21px 106px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: rgb(92, 92, 94);
+
+    & .left {
+        display: grid;
+        grid-template-rows: 102px repeat(2, 150px);
+        & h3 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+
+        & ol {
+            grid-row: 2 / 4;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            padding-left: 27px;
+            list-style-type: decimal-leading-zero;
+
+            & li:first-of-type {
+                color: rgb(7, 7, 7);
+            }
+
+            & li:not(:first-of-type) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    & .center {
+        display: grid;
+        grid-template-rows: 102px repeat(2, 150px);
+
+        & h2 {
+            background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 41px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            width: 330px;
+        }
+    }
+
+    & .right {
+        display: grid;
+        grid-template-rows: 102px repeat(2, 150px);
+        margin-left: 20px;
+
+        & .desc {
+            grid-row-start: 2;
+
+            & h3 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28px;  
+                margin-bottom: 10px;
+            }
+
+            & p {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+
+        & img {
+            grid-row-start: 3;
+        }
+    }
+}
+
+.container2 {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    color: rgb(92, 92, 94);
+    
+
+    & h3 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    & h1, button{
+        background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 41px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-top: 10px;
+    }
+
+    & button {
+        border: 1px solid;
+        border-image: linear-gradient(180deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+        border-image-slice: 1;
+        width: 225px;
+        padding: 16px 45px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-top: 30px;
+    }
+}
+
+.component1 {
+    border: 1px solid;
+    border-image: linear-gradient(180deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+    border-image-slice: 1;
+    margin-top: 68px;
+    padding: 20px 20px;
+    width: 300px;
+
+    & h2 {
+        margin-top: 10px;
+        color: rgb(7, 7, 7);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0%;
+        width: 265px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-bottom: 40px;
+    }
+
+    & a {
+        background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0%;
+    }
+}
+
+.component2 {
+    border: 1px solid;
+    border-image: linear-gradient(180deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+    border-image-slice: 1;
+    margin-top: 68px;
+    padding: 20px 20px;
+    width: 300px;
+
+    & h2 {
+        margin-top: 10px;
+        color: rgb(7, 7, 7);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        width: 259px;
+        margin-bottom: 58px;
+    }
+
+    & a {
+        background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0%;
+    }
+}
+
+.component3 {
+    border: 1px solid;
+    border-image: linear-gradient(180deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+    border-image-slice: 1;
+    margin-top: 68px;
+    padding: 20px 20px;
+    width: 300px;
+
+    & h2 {
+        margin-top: 10px;
+        color: rgb(7, 7, 7);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        width: 259px;
+        margin-bottom: 40px;
+    }
+
+    & a {
+        background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0%;
+    }
+}
+
+
+.ocul {
+    margin: 100px 116px 0 117px;
+    color: rgb(92, 92, 94);;
+    position: relative;
+
+    & h1 {
+        background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        opacity: 0.1;
+        font-size: 350px;
+        font-weight: 700;
+        line-height: 484px;
+        letter-spacing: 0%;
+    }
+
+    & img{
+        position: absolute;
+        top: 50px;
+        left: 580px;
+    }  
+
+    & .buy {
+        position: absolute;
+        left: 450px;
+        bottom: 20px;;
+    }
+
+    & p {
+        position: absolute;
+        left: 665px;
+        bottom: 10px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    color: rgb(92, 92, 94);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+
+    & .headset h1 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    & .headset img{
+        margin-top: 50px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .controllers img{
+        margin-top: 68px;
+    }
+
+    .charging_cable {
+        margin-top: 48px;
+        grid-column: 2;
+    }
+
+    .included {
+        grid-row: 1;
+        grid-column: 3;
+        margin-left: 20px;
+        margin-top: 68px;
+    }
+
+    .included h1{
+        background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 41px;
+        width: 250px;
+        text-transform: uppercase;
+    }
+
+    .glasses_spacer {
+        margin-top: 48px;
+        margin-left: 20px;
+    }
+}
+
+.container4 {
+    text-align: center;
+}
+
+.container5 {
+    color: rgb(92, 92, 94);
+    margin: 100px 360px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 1fr;
+
+    .accessories {
+        grid-column: 1 / 5;
+    }
+
+    & .accessories h2 {
+        color: rgb(92, 92, 94);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: start;
+        margin: 0;
+    } 
+
+    & h1 {
+        background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 41px;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+
+    .case, .cable, .pack, .cards {
+        border: 1px solid;
+        border-image: linear-gradient(180deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+        border-image-slice: 1;
+        margin-top: 30px;
+    }
+
+    .cable h2 {
+        margin-bottom: 38px;
+    }
+
+    .cards h2{
+        margin-bottom: 38px;
+    }
+
+    img {
+        margin: 20px 20px 10px;
+    }
+
+    & h2 {
+        color: rgb(7, 7, 7);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 0px 20px 10px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        margin: 0px 20px 42px;
+    }
+
+    & span {
+        color: rgb(7, 7, 7);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        margin: 0px 20px;
+    }
+
+    & button {
+        display: block;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93) 100%);
+        border-image-slice: 1;
+        background: linear-gradient(180.00deg, rgb(188, 16, 216),rgba(80, 0, 250, 0.93));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        margin: 20px 20px 18px;
+        padding: 6px 90px;
+
+    }
+}
